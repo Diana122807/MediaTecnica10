@@ -27,7 +27,9 @@ switch (opcion)
   case 5:
     Console.WriteLine("superior");
     break;
- 
+ default:
+    Console.WriteLine("saliendo del programa");
+    break;
 }
   }
 }
