@@ -1,0 +1,100 @@
+/******************************************************************************
+Autora: Diana Carolina Ramirez
+Fecha:06-06-24
+Descripcion: Toy Story
+     Los juguetes de Andy están 
+     jugando a las escondidas. Pide al 
+     usuario las ubicaciones donde buscar 
+     y usa estructuras "si" para determinar 
+     si los juguetes están en la ubicación 
+     correcta o no. Reportar la cantidad 
+     total de juguetes que fueron encontrados 
+     al finalizar 4 rondas.
+*******************************************************************************/
+using System;
+
+
+class HelloWorld {
+    static void Main() {
+       
+        int juguetesEncontrados = 0;
+        
+        
+        for (int i = 0; i < 4; i++) { 
+            
+            
+            Console.WriteLine("Ronda " + (i+1) + ": ¿Dónde deberíamos buscar?");
+            Console.WriteLine("Opciones: sotano, sala, cocina, patio");
+            string ubicacion = (Console.ReadLine()); 
+            
+            
+            if (ubicacion == "sotano") {
+                Console.WriteLine("¡Encontramos un juguete en el sotano!");
+                juguetesEncontrados++;
+            }
+            else if (ubicacion == "sala") {
+                Console.WriteLine("¡Encontramos dos juguetes en la sala!");
+                juguetesEncontrados++;
+                juguetesEncontrados++;
+            }
+            else if (ubicacion == "cocina") {
+                Console.WriteLine("No hay juguetes en la cocina.");
+             }
+            else if (ubicacion == "patio") {
+                Console.WriteLine("¡Encontramos un juguete en el patio!");
+                juguetesEncontrados++;
+            }
+            else {
+                Console.WriteLine("Ubicación no válida.");
+            }
+        }
+        
+         
+        Console.WriteLine("Total de juguetes encontrados: " + juguetesEncontrados);
+        
+         
+    int ronda = 1;
+
+    while (ronda <= 4)
+    {
+        Console.WriteLine("Ronda de las escondidas");
+        Console.WriteLine("Opciones: sotano, sala, cocina, patio");
+        Console.WriteLine("Ingrese la ubicación donde buscar:");
+
+        string ubicacion = Console.ReadLine();
+
+        if (ubicacion == "sotano" || ubicacion == "sotano")
+        {
+            Console.WriteLine("¡Encontramos un juguete en el sotano!");
+            juguetesEncontrados++;
+        }
+        else
+        if (ubicacion == "sala" || ubicacion == "sala")
+        {
+            Console.WriteLine("¡Encontramos dos juguete en la sala!");
+            juguetesEncontrados++;
+            juguetesEncontrados++;
+        }
+        else
+        if (ubicacion == "cocina" || ubicacion == "cocina")
+        {
+            Console.WriteLine("No hay juguetes en la cocina.");
+            
+        }
+        else
+        if (ubicacion == "patio" || ubicacion == "patio")
+        {
+            Console.WriteLine("¡Encontramos un juguete en el patio!");
+            juguetesEncontrados++;
+        }
+        else
+        {
+            Console.WriteLine("No encontraste ningún juguete en esa ubicación.");
+        }
+
+        ronda++;
+    }
+
+    Console.WriteLine("Total de juguetes encontrados: " + juguetesEncontrados);
+    }
+}
