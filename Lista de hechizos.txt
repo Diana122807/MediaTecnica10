@@ -1,0 +1,40 @@
+/*
+Autor: Diana Carolina
+
+Fecha: 11/07/24
+
+Descripcion:
+Harry Potter necesita un programa 
+en C# para listar sus hechizos. 
+Completa el espacio en blanco 
+para mostrar los nombres de los 
+hechizos en la consola:
+*/
+ 
+using System;
+using System.Threading;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string[] hechizos = {"Expecto Patronum", "Wingardium Leviosa","Expelliarmus"};
+       Console.WriteLine(" _                     _       _                     ");                     
+       Console.WriteLine("| |__     ___    ___  | |__   (_)  ____   ___    ___"); 
+       Console.WriteLine("| '_ |   / _ |  / __| | '_ |  | | |_  /  / _ |  / __|");
+       Console.WriteLine("| | | | |  __/ | (__  | | | | | |  / /  | (_) | |_  |  ");
+       Console.WriteLine("|_| |_|  |___|  |___| |_| |_| |_| /___|  |___|  |___/"); 
+      Thread.Sleep(3000);
+        Console.Clear();
+
+            for (int i = 0; i < 3; i++) 
+            {
+                Console.WriteLine(hechizos[i]);
+            }
+            
+        
+       
+    }
+}
+
+
